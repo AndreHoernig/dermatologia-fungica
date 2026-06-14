@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tinea pedis e Cromomicose | Educação em Saúde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dermatologia Fúngica</h1>
+            <p>Tinea pedis e Cromomicose: aspectos clínicos, prevenção e tratamento</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="card-grid">
+            <div class="card">
+                <h2>Tinea pedis (Frieira)</h2>
+                <p>Infecção fúngica superficial dos pés, causada por dermatófitos. Altamente prevalente em ambientes úmidos e coletivos.</p>
+                <button class="btn-detalhes" data-doenca="tinea">Ver detalhes</button>
+            </div>
+
+            <div class="card">
+                <h2>Cromomicose</h2>
+                <p>Infecção crônica subcutânea causada por fungos demáceos. Associada a traumas com material vegetal em trabalhadores rurais.</p>
+                <button class="btn-detalhes" data-doenca="cromo">Ver detalhes</button>
+            </div>
+        </div>
+
+        <div id="detalhesContainer" class="detalhes-container" style="display: none;">
+            <div class="detalhes-card">
+                <button id="btnFecharDetalhes" class="btn-fechar">Fechar</button>
+                <div id="detalhesConteudo"></div>
+            </div>
+        </div>
+
+        <section class="quiz-section">
+            <h3>Avaliacao de conhecimentos</h3>
+            <p>Responda as oito perguntas abaixo para testar seu aprendizado.</p>
+            <div id="quizContainer"></div>
+            <button id="btnCorrigirQuiz" class="btn-corrigir">Corrigir respostas</button>
+            <div id="resultadoQuiz" class="resultado-box"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>
+                Material educativo baseado em diretrizes da 
+                <a href="https://www.sbd.org.br/" target="_blank" rel="noopener noreferrer">Sociedade Brasileira de Dermatologia</a> .
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
